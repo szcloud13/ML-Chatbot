@@ -1,0 +1,74 @@
+swagger: '2.0'
+info:
+  version: '0'
+  title: Dentist Info API
+  description: ''
+
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+# basePath: /dentist_api
+schemes:
+ - https
+ 
+consumes:
+- application/json
+
+produces: 
+- application/json
+
+paths:
+  /dentists:
+    get:
+      operationId: getDentist
+      summary: Return dentists and their info
+      parameters:
+        - in: query
+          name: expression
+          type: string
+      responses:
+        200:
+          description: OK
+          schema: 
+            $ref: "#/definitions/Dentists"
+        
+        400:
+          description: Error
+          schema:
+            type: string
+            example: "Unable to parse query string"
+        
+        403:
+          description: Error
+          schema: 
+            type: string
+            example: "Not Found"
+            
+definitions:
+  Dentist:
+    type: "object"
+    required: 
+      - "name"
+    properties: 
+      name: 
+        type: "string"
+      location: 
+        type: "string"
+      specialization: 
+        type: "string"
+  Dentists:
+    type: array
+    items:
+      $ref: "#/definitions/Dentist"
+  ErrorModel: 
+    type: "object"
+    required: 
+      - "code"
+      - "message"
+    properties: 
+      code: 
+        type: "integer"
+        format: "int32"
+      message: 
+        type: "string"
+# Added by API Auto Mocking Plugin
+basePath: /dentist_api

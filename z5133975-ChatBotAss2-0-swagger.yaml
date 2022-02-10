@@ -1,0 +1,41 @@
+swagger: '2.0'
+info:
+  version: '0'
+  title: Chat_Bot_Ass2
+  description: ''
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+
+schemes:
+ - https
+
+consumes:
+- application/json
+
+produces: 
+- application/json
+
+paths:
+  /ask:
+    get:
+      operationId: parsingRequest
+      summary: answer user questions
+      parameters:
+        - in: query
+          name: expression
+          type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            type: string
+            example: "Hello Human! I am example string."
+        
+        400:
+          description: Error
+          schema:
+            type: string
+            example: "Sorry I did not understand your request"
+
+# Added by API Auto Mocking Plugin
+basePath: /MLChatBot
