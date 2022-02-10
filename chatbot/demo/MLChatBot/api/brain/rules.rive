@@ -1,0 +1,78 @@
++ hi
+- Hi! What can I do for you?
+- Hey there! What can I do for you?
+- Hello! What can I do for you?
+
++ (hello|hi|hey) ava
+- Hey there! :D
+
++ what is your name [*]
+- You can call me Ava!
+
++ who are you 
+- I am Ava the AI assistant!
+
++ what can you do
+- I can tell you more about our dentists! I can also help you book an appointment or even cancel one.
+
++ hi bot
+- hi user! What can I do for you?
+
++ (hey|hello)
+- Hi! What can I do for you?
+
++ (hey|hello) how are you
+- Hi! I'm good :) Thanks for asking. What can I do for you?
+
++ how are you
+- I'm good, what can I do for you??
+
++ where are you from
+- I'm from my country :)
+
++ my name is *
+- Nice to meet you! What can I do for you?
+
++ i am (happy|excited|thrilled)
+- I am happy for you too!
+
++ [*] (thank you|thanks) [*]
+- No worries! Thank you again for choosing our service! :D
+
++ [*] help [*]
+- Sure, would you like to know more about our dentists? I can also help you book an appointment or even cancel one.
+
++ [*] opening hours [*]
+- Our opening hours are 9am-5pm, 7 days a week. :)
+
++ [*] (what time|when) do you (open|close)
+- Our opening hours are 9am-5pm, 7 days a week. :)
+
++ see you soon
+- See you too!
+
++ great [*]
+- Cool! Anything else I can do?
+
++ that is all
+- Alright! Thank you for choosing our service :)
+
++ cool [*]
+- Great to be of service :)
+
++ [*] he [*]
+- Could you please specify the exact person you wish to mention?
+
++ what details
+- Please include these details in a sentence if you are booking or cancelling an appointment: your full name, the dentist's name, time (24hh:mmPM), date.
+
++ *
+- Sorry I didn't catch that, could you please rephrase?
+- Could you please rephrase that?
+- Sorry I did not understand you :(
+
+
+! sub i'm  = i am
+! sub how's = how is
+! sub what's = what is
+! sub that's = that is
